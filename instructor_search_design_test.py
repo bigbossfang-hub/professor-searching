@@ -20,8 +20,8 @@ load_dotenv()
 
 # 페이지 설정
 st.set_page_config(
-    page_title="강사 고급 검색",
-    page_icon="🔍",
+    page_title="강사 검색 (디자인 테스트)",
+    page_icon="🎨",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -2185,8 +2185,8 @@ if not st.session_state.search_results.empty:
                             st.markdown('#### 📺 관련 영상')
                             # 유튜브 리스트 및 요약 정보 표시
                             display_youtube_list_and_summary(youtube_links, instructor_name, instructor_name)
-                    st.markdown('</div>', unsafe_allow_html=True)
-                
+                            st.markdown('</div>', unsafe_allow_html=True)
+                    
                     st.markdown('</div>', unsafe_allow_html=True)  # profile-container 닫기
                 
                 # 간단한 구분선
